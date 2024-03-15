@@ -49,6 +49,18 @@ public class Main {
         String del3 = pvz3.replace("a", "").replace("e", "").replace("i", "").replace("o", "").replace("u", "").replace("y", "").replace("A", "").replace("E", "").replace("I", "").replace("O", "").replace("U", "").replace("Y", "");
         System.out.println(del3);
 
+        System.out.println("7 uzduotis");
+        String inp = "Star Wars: Episode "+ " ".repeat( (int) (Math.random() * 10))+((int) (Math.random() * 7)+1) + " - A New Hope";
+        String sk = inp.replaceAll("[^0-9\\.]", "");
+        System.out.println(sk);
+
+        System.out.println("8 uzduotis");
+        String inp2 = "Don't Be a Menace to South Central While Drinking Your Juice in the Hood";
+
+
+
+
+
 
 
 
