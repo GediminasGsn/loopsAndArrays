@@ -66,6 +66,17 @@ public class Main {
                 System.out.println(poif);
             }
         }
+        String inp3 = "Tik nereikia gąsdinti Pietų Centro, geriant sultis pas save kvartale";
+        String[] zodziai2 = inp3.split(" ");
+
+        for (String poif2 : zodziai2){
+            if(poif2.length() <= 5){
+                System.out.println(poif2);
+            }
+        }
+
+
+        System.out.println("9 uzdotis");
 
 
 
