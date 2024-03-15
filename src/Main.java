@@ -40,13 +40,16 @@ public class Main {
         System.out.println(rplc);
 
         System.out.println("6 uzduotis");
-        String del = pvz.replace("a", "").replace("e", "").replace("i", "").replace("o", "").replace("u", "").replace("y", "").replace("A", "").replace("E", "").replace("I", "").replace("O", "").replace("U", "").replace("Y", "");
+        String del  = pvz.replaceAll("[aeiouy]", "").replaceAll("[AEIOUY]", "");
+//        String del = pvz.replace("a", "").replace("e", "").replace("i", "").replace("o", "").replace("u", "").replace("y", "").replace("A", "").replace("E", "").replace("I", "").replace("O", "").replace("U", "").replace("Y", "");
         System.out.println(del);
         String pvz2 = "Breakfast at Tiffany's";
-        String del2 = pvz2.replace("a", "").replace("e", "").replace("i", "").replace("o", "").replace("u", "").replace("y", "").replace("A", "").replace("E", "").replace("I", "").replace("O", "").replace("U", "").replace("Y", "");
+        String del2  = pvz2.replaceAll("[aeiouy]", "").replaceAll("[AEIOUY]", "");
+//        String del2 = pvz2.replace("a", "").replace("e", "").replace("i", "").replace("o", "").replace("u", "").replace("y", "").replace("A", "").replace("E", "").replace("I", "").replace("O", "").replace("U", "").replace("Y", "");
         System.out.println(del2);
         String pvz3 = "2001: A Space Odyssey” ir “It's a Wonderful Life";
-        String del3 = pvz3.replace("a", "").replace("e", "").replace("i", "").replace("o", "").replace("u", "").replace("y", "").replace("A", "").replace("E", "").replace("I", "").replace("O", "").replace("U", "").replace("Y", "");
+        String del3  = pvz3.replaceAll("[aeiouy]", "").replaceAll("[AEIOUY]", "");
+//        String del3 = pvz3.replace("a", "").replace("e", "").replace("i", "").replace("o", "").replace("u", "").replace("y", "").replace("A", "").replace("E", "").replace("I", "").replace("O", "").replace("U", "").replace("Y", "");
         System.out.println(del3);
 
         System.out.println("7 uzduotis");
@@ -56,6 +59,13 @@ public class Main {
 
         System.out.println("8 uzduotis");
         String inp2 = "Don't Be a Menace to South Central While Drinking Your Juice in the Hood";
+        String[] zodziai = inp2.split(" ");
+
+        for (String poif : zodziai){
+            if (poif.length() <= 5) {
+                System.out.println(poif);
+            }
+        }
 
 
 
